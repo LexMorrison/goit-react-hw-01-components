@@ -12,11 +12,7 @@ export const TransactionHistoryItem = ({ type, amount, currency }) => {
 };
 
 TransactionHistoryItem.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.exact({
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    })
-  ),
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
